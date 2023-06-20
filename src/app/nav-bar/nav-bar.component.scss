@@ -1,0 +1,28 @@
+@import "./../../resourse.scss";
+
+.header-contanier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-style {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.list-contanier{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #fff;
+    @include responsive("tablet") {
+        font-size: 15px;
+        width: 50px;
+    }
+}
