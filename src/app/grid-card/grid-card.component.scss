@@ -1,0 +1,33 @@
+@import "./../../resourse.scss";
+
+.grid-contanier {
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.grid-card {
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    color: #fff;
+    background-color: #CF304B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.amount-curruncy {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
