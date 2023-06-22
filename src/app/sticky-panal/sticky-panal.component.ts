@@ -25,16 +25,16 @@ export class StickyPanalComponent {
     })
   }
 
-  converGrid() {
+  converGrid(): void {
     this.currencyService.getMostPopularCurrencies(this.currencyService.amout).subscribe((items: CurrValue[]) => {
       this.currencyService.gridData = items
     });
   }
-  currncyItemFrom(curruncyFrom: any){
+  currncyItemFrom(curruncyFrom: any): void {
     this.selectedvalFrom = curruncyFrom;
   }
 
-  currncyItemTo(curruncyTo: any){
+  currncyItemTo(curruncyTo: any): void{
     this.selectedvalTo = curruncyTo;
   }
 

@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     @include responsive("tablet") {
-        width: 350px;
+        width: 300px;
     }
 }
 

@@ -177,8 +177,44 @@ export const Rates: object = {
   "ZMW": 19.063637,
   "ZWL": 351.885347
 }
-
-
+export const GridDefaulData = [
+  {
+      "currencyName": "USD",
+      "valueCurr": 2409
+  },
+  {
+      "currencyName": "CNY",
+      "valueCurr": 510
+  },
+  {
+      "currencyName": "NZD",
+      "valueCurr": 1770
+  },
+  {
+      "currencyName": "AUD",
+      "valueCurr": 115
+  },
+  {
+      "currencyName": "CAD",
+      "valueCurr": 431
+  },
+  {
+      "currencyName": "CHF",
+      "valueCurr": 464
+  },
+  {
+      "currencyName": "GBP",
+      "valueCurr": 772
+  },
+  {
+      "currencyName": "JPY",
+      "valueCurr": 1159
+  },
+  {
+      "currencyName": "EUR",
+      "valueCurr": 734
+  }
+]
 export const conversionCurruncy = {
   "result": "success",
   "documentation": "https://www.exchangerate-api.com/docs",
