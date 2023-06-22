@@ -7,9 +7,4 @@ import { CurrencyService } from 'src/services/currency.service';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-
-  constructor( public currencyService: CurrencyService){}
-
-  ngOnInit() {
-  }
 }
