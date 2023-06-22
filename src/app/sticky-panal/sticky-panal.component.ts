@@ -36,7 +36,6 @@ export class StickyPanalComponent {
   }
 
   swap(): void {
-    debugger
     let fromCurr;
     fromCurr = this.selectedvalFrom 
     this.selectedvalFrom  = this.selectedvalTo;

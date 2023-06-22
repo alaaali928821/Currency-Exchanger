@@ -1,7 +1,12 @@
+@import "./../../resourse.scss";
 .form-contanier{
     display: flex;
     width: 500px;
     margin: 0 auto;
+    @include responsive("tablet") {
+        flex-direction: column;
+        width: 350px;
+    }
 }
 
 .custom-select{
