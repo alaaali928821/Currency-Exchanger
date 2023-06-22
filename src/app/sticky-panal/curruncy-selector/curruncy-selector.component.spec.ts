@@ -20,4 +20,15 @@ describe('CurruncySelectorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should emit the selected value', () => {
+    const event = { target: { value: 'testValue' } };
+    spyOn(component.currItemEvent, 'emit');
+    component.onItemSelected(event);
+    expect(component.currItemEvent.emit).toHaveBeenCalled();
+  });
 });

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CurrValue } from 'src/services/currency.model';
 import { CurrencyService } from 'src/services/currency.service';
 import { AllCurrncies } from 'src/services/define';
 
@@ -16,17 +17,19 @@ export class StickyPanalComponent {
 
   constructor(public currencyService: CurrencyService) { }
 
-  changeAmountValue() {
-    this.amount_value
-  }
-
- 
   convert(): void {
+    this.currencyService.amout = this.amount_value;
+    this.converGrid();
     this.currencyService.convertCurrency(this.selectedvalTo, this.selectedvalFrom, this.amount_value).subscribe((data) => {
       this.result = data
     })
   }
 
+  converGrid() {
+    this.currencyService.getMostPopularCurrencies(this.currencyService.amout).subscribe((items: CurrValue[]) => {
+      this.currencyService.gridData = items
+    });
+  }
   currncyItemFrom(curruncyFrom: any){
     this.selectedvalFrom = curruncyFrom;
   }

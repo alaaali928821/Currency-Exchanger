@@ -1,7 +1,7 @@
 <div class="grid-contanier">
-    <div *ngFor="let element of data" class="grid-card">
-        <p class="amount">{{ element.value }} </p>
-        <p class="amount-curruncy">{{ element.currencyName }}</p>
-        <div class="flag currency-flag currency-flag-{{element.currencyName.toLowerCase()}}"></div>
+    <div *ngFor="let item of currencyService.gridData ; let i = index" class="grid-card">
+        <p class="amount">{{ item.valueCurr}} </p>
+        <p class="amount-curruncy">{{ item.currencyName }}</p>
+        <div class="flag currency-flag currency-flag-{{item.currencyName.toLowerCase()}}"></div>
     </div>
 </div>

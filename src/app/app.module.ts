@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { StickyPanalComponent } from './sticky-panal/sticky-panal.component';
 import { FormsModule } from '@angular/forms';
 import { CurruncySelectorComponent } from './sticky-panal/curruncy-selector/curruncy-selector.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CurruncySelectorComponent } from './sticky-panal/curruncy-selector/curr
   imports: [
     BrowserModule,
     HttpClientModule,
+    CommonModule,
     FormsModule,
     AppRoutingModule
   ],

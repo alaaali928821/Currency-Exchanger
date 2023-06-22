@@ -10,19 +10,23 @@ import { Observable } from 'rxjs';
 })
 export class CurrencyService {
   public dataItemsCurrency: Curruncy = {};
+  amout: number = 1;
+  gridData: CurrValue[] = [];
 
-  constructor(private currencyData: CurrencyData) { }
+  constructor(public currencyData: CurrencyData) { }
 
 
-  getMostPopularCurrencies(amount: number = 1): Array<CurrValue> {
-    let mostPopulaDat: Array<CurrValue> = []
-    this.currencyData.getExchangeRates().subscribe(res => {
-      let rates = JSON.stringify(res.rates);
-      MostPopularCurrncies.forEach(el => {
-        mostPopulaDat.push({ currencyName: el, value: rates.indexOf(el) * amount })
+  getMostPopularCurrencies(amount: number = 1): Observable<CurrValue[]> {
+    return this.currencyData.getExchangeRates().pipe(
+      map(res => {
+        const rates = JSON.stringify(res.rates);
+        const mostPopularData: CurrValue[] = [];
+        MostPopularCurrncies.forEach(el => {
+          mostPopularData.push({ currencyName: el, valueCurr: rates.indexOf(el) * amount });
+        });
+        return mostPopularData;
       })
-    })
-    return mostPopulaDat;
+    );
   }
 
   convertCurrency(To: string = 'USD', From: string = 'EUR', amount: number = 1): Observable<number> {

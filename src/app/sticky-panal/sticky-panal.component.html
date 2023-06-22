@@ -1,5 +1,5 @@
 <div class="form-contanier">
-  <input class="custom-select" required lang="en-US" type="number" [(ngModel)]="amount_value" (change)="changeAmountValue()" name="amount" (focusout)="changeAmountValue()" #amount_input placeholder="Ex: 356" step="0.01">
+  <input class="custom-select" required lang="en-US" type="number" [(ngModel)]="amount_value" name="amount"  placeholder="Ex: 356" step="0.01">
 
   <div>
     <app-curruncy-selector (currItemEvent)="currncyItemFrom($event)" [selectedval]="selectedvalFrom"></app-curruncy-selector>

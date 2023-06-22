@@ -181,6 +181,6 @@ export interface Curruncy {
 
 export interface CurrValue {
     currencyName: string;
-    value: number;
+    valueCurr: number;
 }
   
