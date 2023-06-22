@@ -2,5 +2,6 @@
     <div *ngFor="let element of data" class="grid-card">
         <p class="amount">{{ element.value }} </p>
         <p class="amount-curruncy">{{ element.currencyName }}</p>
+        <div class="flag currency-flag currency-flag-{{element.currencyName.toLowerCase()}}"></div>
     </div>
 </div>

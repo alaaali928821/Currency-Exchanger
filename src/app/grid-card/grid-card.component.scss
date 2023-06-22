@@ -1,5 +1,5 @@
 @import "./../../resourse.scss";
-
+@import "currency-flags/dist/currency-flags.css";
 .grid-contanier {
     display: flex;
     width: 500px;
@@ -8,12 +8,14 @@
 }
 
 .grid-card {
+    display: flex;
+    flex-direction: column;
     margin: 5px;
     width: 150px;
     height: 150px;
     border-radius: 25%;
     color: #fff;
-    background-color: #CF304B;
+    background-color: #e28293;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -22,12 +24,14 @@
     font-weight: bold;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
 }
 
 .amount-curruncy {
     font-size: 15px;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+}
+.flag {
+    display: flex;
+    align-self: center;
 }

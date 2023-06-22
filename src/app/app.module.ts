@@ -7,17 +7,23 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { GridCardComponent } from './grid-card/grid-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main/main.component';
+import { StickyPanalComponent } from './sticky-panal/sticky-panal.component';
+import { FormsModule } from '@angular/forms';
+import { CurruncySelectorComponent } from './sticky-panal/curruncy-selector/curruncy-selector.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     GridCardComponent,
-    MainComponent
+    MainComponent,
+    StickyPanalComponent,
+    CurruncySelectorComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

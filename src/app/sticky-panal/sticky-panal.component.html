@@ -1,0 +1,17 @@
+<div class="form-contanier">
+  <input class="custom-select" required lang="en-US" type="number" [(ngModel)]="amount_value" (change)="changeAmountValue()" name="amount" (focusout)="changeAmountValue()" #amount_input placeholder="Ex: 356" step="0.01">
+
+  <div>
+    <app-curruncy-selector (currItemEvent)="currncyItemFrom($event)" [selectedval]="selectedvalFrom"></app-curruncy-selector>
+  </div>
+  <button class="custom-select" (click)="swap()">swap</button>
+  <div>
+    <app-curruncy-selector [selectedval]="selectedvalTo" (currItemEvent)="currncyItemTo($event)"></app-curruncy-selector>
+  </div>
+  <button class="custom-select" (click)="convert()">convert</button>
+</div>
+
+<div class="form-contanier">
+  <p>Result:  {{result}}</p>
+</div>
+
