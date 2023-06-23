@@ -1,27 +1,38 @@
-# CurrencyExchangerApp
+\<h1  align="center"> Currency Exchanger! \</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+\<div  align="center">
 
-## Development server
+   
+!\[Angular\](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+!\[HTML\](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 
-## Code scaffolding
+!\[TypeScript\](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+!\[Sass\](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)
 
-## Build
+\</div>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+\## About
 
-## Running unit tests
+💱 A simple currency converter 💵.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The project gets the currency rate from \[fixer-API\](https://fixer.io/documentation).
 
-## Running end-to-end tests
+  
+\## Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/7732b34b6a906488ee1c636028f4e0811d313e4e6446bd8f.PNG)![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/16e3b7d1658407f07649a148c7d98303994da09fe1373609.PNG)![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/3217c466b3648a680ff99dc2bdbf1dd93873fb43207695be.PNG)
 
-## Further help
+\## Unit Test 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+_using jasmine and karma_
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/2304e0d02da7eb4ca1e0f9ede17df6afb64897d1b054036d.PNG)
+
+\## Features  
+\- Allows you to quickly convert currencies in real time \< \*but due to subscription plan I had to add static values\*>  
+\- Adapts to the size of the browser window
+
+\## Resources  
+\- \[currency-flags\](https://www.npmjs.com/package/currency-flags). Flag image source.
