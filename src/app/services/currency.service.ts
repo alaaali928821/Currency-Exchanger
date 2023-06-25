@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { CurrValue, Curruncy } from './currency.model';
+import { CurrValue, Curruncy } from '../models/currency.model';
 import { CurrencyData } from './currency.data';
 import { map } from 'rxjs/internal/operators/map';
-import { MostPopularCurrncies } from './define';
+import { MostPopularCurrncies } from './data';
 import { Observable } from 'rxjs';
 
 @Injectable({

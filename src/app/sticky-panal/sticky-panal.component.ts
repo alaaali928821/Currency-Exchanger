@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { CurrValue } from 'src/services/currency.model';
-import { CurrencyService } from 'src/services/currency.service';
-import { AllCurrncies } from 'src/services/define';
+import { CurrValue } from '../models/currency.model';
+import { CurrencyService } from '../services/currency.service';
+import { AllCurrncies } from '../services/data';
+
 
 @Component({
   selector: 'app-sticky-panal',

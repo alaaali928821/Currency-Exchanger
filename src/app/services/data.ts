@@ -228,8 +228,6 @@ export const conversionCurruncy = {
   "conversion_rate": 0.9160,
   "conversion_result": 61.372
 }
-
-
 export const responseAllRates = {
   "success": true,
   "timestamp": 1687339803,

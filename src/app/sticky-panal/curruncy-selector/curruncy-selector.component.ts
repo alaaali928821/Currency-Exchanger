@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { AllCurrncies } from 'src/services/define';
+import { AllCurrncies } from 'src/app/services/data';
 
 @Component({
   selector: 'app-curruncy-selector',

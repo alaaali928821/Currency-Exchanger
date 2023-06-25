@@ -1,8 +1,8 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable, map } from "rxjs";
-import { Curruncy } from "./currency.model";
-import { apiKey, conversionCurruncy, responseAllRates } from "./define";
+import { Curruncy } from "../models/currency.model";
+import { apiKey, conversionCurruncy, responseAllRates } from "./data";
 
 @Injectable({
   providedIn: 'root'
