@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CurrencyService } from '../services/currency.service';
-import { GridDefaulData } from '../services/data';
+import { CurrencyService } from '../../services/currency.service';
+import { GridDefaulData } from '../../services/data';
 
 
 @Component({

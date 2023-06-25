@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { CurrValue } from '../models/currency.model';
-import { CurrencyService } from '../services/currency.service';
-import { AllCurrncies } from '../services/data';
+import { CurrValue } from 'src/app/models/currency.model';
+import { CurrencyService } from 'src/app/services/currency.service';
+import { AllCurrncies } from 'src/app/services/data';
+
 
 
 @Component({
